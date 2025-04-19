@@ -18,19 +18,29 @@ Although I experimented with `RFECV` using `GradientBoostingRegressor` as an est
 
 Model performance was evaluated using the R-squared (R²) metric.
 
+## Preview
+
+Here’s a screenshot of the completed Streamlit app, showing the user interface for entering home features and returning a predicted price:
+
+![Screenshot of the Streamlit housing price prediction app](images/housing_pricing_app_screenshot.png)
+
 ## Files
 
 ### Data
 - `housing-deployment-reg.csv`: Housing data used for model training
 
 ### Scripts
-- `housing_pricing_predictions_model_RandomForestRegressor.ipynb`: Jupyter notebook containing model training, evaluation, and export via Pickle
+- `housing_pricing_predictions_model_RandomForestRegressor.ipynb`: Jupyter Notebook containing model training, evaluation, and export via Pickle
 - `house_pricing_streamlit_app.py`: Python script that runs the Streamlit app
 
 ### Images
 - `iowa.pptx`: PowerPoint file used to create the visual for the app
 - `home-for-sale-sign.png`: Image of a "For Sale" sign
 - `image_Iowa.png`: Image used as the header/banner in the app
+- `housing_pricing_app_screenshot.png`: Screenshot of the deployed Streamlit Housing Price App
+
+### Trained_Model
+- `trained_pipe_randomforestregressor.sav`: Exported trained model using Pickle
 
 ## Using the Files
 
@@ -41,7 +51,7 @@ Model performance was evaluated using the R-squared (R²) metric.
 3. In `housing_pricing_predictions_model_RandomForestRegressor.ipynb`, update paths for:
    - Input data: `housing-deployment-reg.csv`
    - Output model file: `trained_pipe_randomforestregressor.sav`
-4. Run the notebook in Jupyter to reproduce the training process and save the model.
+4. Run the Notebook in Jupyter to reproduce the training process and save the model.
 5. From your terminal, deploy the app with:
    ```bash
    streamlit run /[your_file_path]/house_pricing_streamlit_app.py
