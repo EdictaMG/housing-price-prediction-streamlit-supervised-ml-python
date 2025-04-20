@@ -55,3 +55,15 @@ Here’s a screenshot of the completed Streamlit app, showing the user interface
 5. From your terminal, deploy the app with:
    ```bash
    streamlit run /[your_file_path]/house_pricing_streamlit_app.py
+
+## Languages and Libraries
+
+- Python 3.10.12  
+- pandas 2.2.2  
+- scikit-learn 1.4.2  
+
+## Tools
+
+- Jupyter Notebook
+- Streamlit
+
